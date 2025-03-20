@@ -39,6 +39,8 @@
             this.comboBox_groups = new System.Windows.Forms.ComboBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel_right = new System.Windows.Forms.Panel();
+            this.btn_delete = new System.Windows.Forms.Button();
+            this.label_address = new System.Windows.Forms.Label();
             this.label_ville = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -49,8 +51,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label_groupe = new System.Windows.Forms.Label();
             this.picture_contact = new System.Windows.Forms.PictureBox();
-            this.label_address = new System.Windows.Forms.Label();
-            this.btn_delete = new System.Windows.Forms.Button();
             this.panel_left.SuspendLayout();
             this.panel1.SuspendLayout();
             this.group_contact_list.SuspendLayout();
@@ -113,7 +113,7 @@
             this.btn_add_contact.Name = "btn_add_contact";
             this.btn_add_contact.Size = new System.Drawing.Size(169, 30);
             this.btn_add_contact.TabIndex = 2;
-            this.btn_add_contact.Text = "Add";
+            this.btn_add_contact.Text = "Add new contact";
             this.btn_add_contact.UseVisualStyleBackColor = true;
             // 
             // listBox_contacts
@@ -154,6 +154,29 @@
             this.panel_right.Size = new System.Drawing.Size(357, 532);
             this.panel_right.TabIndex = 1;
             // 
+            // btn_delete
+            // 
+            this.btn_delete.BackColor = System.Drawing.Color.Transparent;
+            this.btn_delete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_delete.BackgroundImage")));
+            this.btn_delete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_delete.FlatAppearance.BorderSize = 0;
+            this.btn_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_delete.Location = new System.Drawing.Point(310, 12);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.Size = new System.Drawing.Size(30, 30);
+            this.btn_delete.TabIndex = 12;
+            this.btn_delete.UseVisualStyleBackColor = false;
+            // 
+            // label_address
+            // 
+            this.label_address.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_address.Location = new System.Drawing.Point(86, 419);
+            this.label_address.Name = "label_address";
+            this.label_address.Size = new System.Drawing.Size(252, 18);
+            this.label_address.TabIndex = 11;
+            this.label_address.Text = "Lot ...";
+            this.label_address.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // label_ville
             // 
             this.label_ville.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -171,7 +194,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(68, 18);
             this.label6.TabIndex = 9;
-            this.label6.Text = "Ville :";
+            this.label6.Text = "City :";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label5
@@ -241,7 +264,7 @@
             this.label_groupe.Name = "label_groupe";
             this.label_groupe.Size = new System.Drawing.Size(100, 18);
             this.label_groupe.TabIndex = 1;
-            this.label_groupe.Text = "Groupe";
+            this.label_groupe.Text = "Group";
             this.label_groupe.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // picture_contact
@@ -255,29 +278,6 @@
             this.picture_contact.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picture_contact.TabIndex = 0;
             this.picture_contact.TabStop = false;
-            // 
-            // label_address
-            // 
-            this.label_address.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_address.Location = new System.Drawing.Point(86, 419);
-            this.label_address.Name = "label_address";
-            this.label_address.Size = new System.Drawing.Size(252, 18);
-            this.label_address.TabIndex = 11;
-            this.label_address.Text = "Lot ...";
-            this.label_address.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // btn_delete
-            // 
-            this.btn_delete.BackColor = System.Drawing.Color.Transparent;
-            this.btn_delete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_delete.BackgroundImage")));
-            this.btn_delete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_delete.FlatAppearance.BorderSize = 0;
-            this.btn_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_delete.Location = new System.Drawing.Point(310, 12);
-            this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(30, 30);
-            this.btn_delete.TabIndex = 12;
-            this.btn_delete.UseVisualStyleBackColor = false;
             // 
             // MainWindow
             // 

@@ -52,6 +52,8 @@
     <Compile Include="AddContactWindow.Designer.cs">
       <DependentUpon>AddContactWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="scripts\Group.cs" />
+    <Compile Include="scripts\Contact.cs" />
     <Compile Include="MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
