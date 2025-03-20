@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.panel_left = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txt_search = new System.Windows.Forms.TextBox();
@@ -49,6 +50,7 @@
             this.label_groupe = new System.Windows.Forms.Label();
             this.picture_contact = new System.Windows.Forms.PictureBox();
             this.label_address = new System.Windows.Forms.Label();
+            this.btn_delete = new System.Windows.Forms.Button();
             this.panel_left.SuspendLayout();
             this.panel1.SuspendLayout();
             this.group_contact_list.SuspendLayout();
@@ -135,6 +137,7 @@
             // 
             // panel_right
             // 
+            this.panel_right.Controls.Add(this.btn_delete);
             this.panel_right.Controls.Add(this.label_address);
             this.panel_right.Controls.Add(this.label_ville);
             this.panel_right.Controls.Add(this.label6);
@@ -243,7 +246,9 @@
             // 
             // picture_contact
             // 
+            this.picture_contact.BackColor = System.Drawing.Color.Transparent;
             this.picture_contact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picture_contact.Image = ((System.Drawing.Image)(resources.GetObject("picture_contact.Image")));
             this.picture_contact.Location = new System.Drawing.Point(13, 8);
             this.picture_contact.Name = "picture_contact";
             this.picture_contact.Size = new System.Drawing.Size(330, 300);
@@ -261,13 +266,28 @@
             this.label_address.Text = "Lot ...";
             this.label_address.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // btn_delete
+            // 
+            this.btn_delete.BackColor = System.Drawing.Color.Transparent;
+            this.btn_delete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_delete.BackgroundImage")));
+            this.btn_delete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_delete.FlatAppearance.BorderSize = 0;
+            this.btn_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_delete.Location = new System.Drawing.Point(310, 12);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.Size = new System.Drawing.Size(30, 30);
+            this.btn_delete.TabIndex = 12;
+            this.btn_delete.UseVisualStyleBackColor = false;
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(724, 541);
             this.Controls.Add(this.panel_right);
             this.Controls.Add(this.panel_left);
+            this.DoubleBuffered = true;
             this.Name = "MainWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MyContact";
@@ -304,6 +324,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label_phone;
         private System.Windows.Forms.Label label_address;
+        private System.Windows.Forms.Button btn_delete;
     }
 }
 
