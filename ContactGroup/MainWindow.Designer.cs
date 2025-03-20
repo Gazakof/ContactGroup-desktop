@@ -38,7 +38,6 @@
             this.comboBox_groups = new System.Windows.Forms.ComboBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel_right = new System.Windows.Forms.Panel();
-            this.label_address = new System.Windows.Forms.Label();
             this.label_ville = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -49,6 +48,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label_groupe = new System.Windows.Forms.Label();
             this.picture_contact = new System.Windows.Forms.PictureBox();
+            this.label_address = new System.Windows.Forms.Label();
             this.panel_left.SuspendLayout();
             this.panel1.SuspendLayout();
             this.group_contact_list.SuspendLayout();
@@ -62,14 +62,14 @@
             this.panel_left.Controls.Add(this.group_contact_list);
             this.panel_left.Location = new System.Drawing.Point(5, 4);
             this.panel_left.Name = "panel_left";
-            this.panel_left.Size = new System.Drawing.Size(352, 553);
+            this.panel_left.Size = new System.Drawing.Size(352, 532);
             this.panel_left.TabIndex = 0;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.txt_search);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(9, 483);
+            this.panel1.Location = new System.Drawing.Point(9, 461);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(334, 62);
             this.panel1.TabIndex = 1;
@@ -100,14 +100,14 @@
             this.group_contact_list.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.group_contact_list.Location = new System.Drawing.Point(9, 8);
             this.group_contact_list.Name = "group_contact_list";
-            this.group_contact_list.Size = new System.Drawing.Size(334, 468);
+            this.group_contact_list.Size = new System.Drawing.Size(334, 447);
             this.group_contact_list.TabIndex = 0;
             this.group_contact_list.TabStop = false;
             this.group_contact_list.Text = "My Contact";
             // 
             // btn_add_contact
             // 
-            this.btn_add_contact.Location = new System.Drawing.Point(78, 431);
+            this.btn_add_contact.Location = new System.Drawing.Point(76, 410);
             this.btn_add_contact.Name = "btn_add_contact";
             this.btn_add_contact.Size = new System.Drawing.Size(169, 30);
             this.btn_add_contact.TabIndex = 2;
@@ -120,7 +120,7 @@
             this.listBox_contacts.ItemHeight = 21;
             this.listBox_contacts.Location = new System.Drawing.Point(6, 64);
             this.listBox_contacts.Name = "listBox_contacts";
-            this.listBox_contacts.Size = new System.Drawing.Size(322, 361);
+            this.listBox_contacts.Size = new System.Drawing.Size(322, 340);
             this.listBox_contacts.Sorted = true;
             this.listBox_contacts.TabIndex = 1;
             // 
@@ -148,18 +148,8 @@
             this.panel_right.Controls.Add(this.picture_contact);
             this.panel_right.Location = new System.Drawing.Point(363, 4);
             this.panel_right.Name = "panel_right";
-            this.panel_right.Size = new System.Drawing.Size(357, 552);
+            this.panel_right.Size = new System.Drawing.Size(357, 532);
             this.panel_right.TabIndex = 1;
-            // 
-            // label_address
-            // 
-            this.label_address.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_address.Location = new System.Drawing.Point(86, 419);
-            this.label_address.Name = "label_address";
-            this.label_address.Size = new System.Drawing.Size(252, 18);
-            this.label_address.TabIndex = 11;
-            this.label_address.Text = "Lot ...";
-            this.label_address.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label_ville
             // 
@@ -261,11 +251,21 @@
             this.picture_contact.TabIndex = 0;
             this.picture_contact.TabStop = false;
             // 
+            // label_address
+            // 
+            this.label_address.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_address.Location = new System.Drawing.Point(86, 419);
+            this.label_address.Name = "label_address";
+            this.label_address.Size = new System.Drawing.Size(252, 18);
+            this.label_address.TabIndex = 11;
+            this.label_address.Text = "Lot ...";
+            this.label_address.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(724, 561);
+            this.ClientSize = new System.Drawing.Size(724, 541);
             this.Controls.Add(this.panel_right);
             this.Controls.Add(this.panel_left);
             this.Name = "MainWindow";
@@ -299,11 +299,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label_email;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label_address;
         private System.Windows.Forms.Label label_ville;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label_phone;
+        private System.Windows.Forms.Label label_address;
     }
 }
 
