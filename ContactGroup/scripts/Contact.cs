@@ -6,40 +6,31 @@ namespace ContactGroup
 {
     public class Contact
     {
-        //Variables
-        private string firstName;
-        private string lastName;
-        private string email;
-        private string phone;
-        private string city;
-        private string address;
-        private Image photo;
-
         //Propriétés
-        public string FirstName { get => firstName; private set => firstName = value; }
-        public string LastName { get => lastName; private set => lastName = value; }
-        public string Email { get => email; private set => email = value; }
-        public string Phone { get => phone; private set => phone = value; }
-        public string Address { get => address; private set => address = value; }
-        public string City { get => city; private set => city = value; }
-        public Image Photo { get => photo; private set => photo = value; }
+        public string FirstName { get; private set; }
+        public string LastName { get; private set; }
+        public string Email { get; private set; }
+        public string Phone { get; private set; }
+        public string Address { get; private set; }
+        public string City { get; private set; }
+        public Image Photo { get; private set; }
 
         //Constructeurs
         public Contact() { }
         public Contact(string firstName, string lastName, string email, string phone, string city, string address, Image photo)
         {
-            this.FirstName = firstName;
-            this.LastName = lastName;
-            this.Email = email;
-            this.Phone = phone;
-            this.City = city;
-            this.Address = address;
-            this.Photo = photo;
+            FirstName = firstName;
+            LastName = lastName;
+            Email = email;
+            Phone = phone;
+            City = city;
+            Address = address;
+            Photo = photo;
         }
 
         public override string ToString()
         {
-            return firstName + " " + lastName;
+            return FirstName + " " + LastName;
         }
     }
 }
