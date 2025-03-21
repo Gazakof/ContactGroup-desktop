@@ -36,7 +36,7 @@
             this.group_contact_list = new System.Windows.Forms.GroupBox();
             this.btn_add_contact = new System.Windows.Forms.Button();
             this.listBox_contacts = new System.Windows.Forms.ListBox();
-            this.comboBox_groups = new System.Windows.Forms.ComboBox();
+            this.comboBox_group = new System.Windows.Forms.ComboBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel_right = new System.Windows.Forms.Panel();
             this.btn_delete = new System.Windows.Forms.Button();
@@ -98,7 +98,7 @@
             // 
             this.group_contact_list.Controls.Add(this.btn_add_contact);
             this.group_contact_list.Controls.Add(this.listBox_contacts);
-            this.group_contact_list.Controls.Add(this.comboBox_groups);
+            this.group_contact_list.Controls.Add(this.comboBox_group);
             this.group_contact_list.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.group_contact_list.Location = new System.Drawing.Point(9, 8);
             this.group_contact_list.Name = "group_contact_list";
@@ -115,6 +115,7 @@
             this.btn_add_contact.TabIndex = 2;
             this.btn_add_contact.Text = "Add new contact";
             this.btn_add_contact.UseVisualStyleBackColor = true;
+            this.btn_add_contact.Click += new System.EventHandler(this.btn_add_contact_Click);
             // 
             // listBox_contacts
             // 
@@ -126,14 +127,14 @@
             this.listBox_contacts.Sorted = true;
             this.listBox_contacts.TabIndex = 1;
             // 
-            // comboBox_groups
+            // comboBox_group
             // 
-            this.comboBox_groups.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_groups.FormattingEnabled = true;
-            this.comboBox_groups.Location = new System.Drawing.Point(6, 29);
-            this.comboBox_groups.Name = "comboBox_groups";
-            this.comboBox_groups.Size = new System.Drawing.Size(322, 29);
-            this.comboBox_groups.TabIndex = 0;
+            this.comboBox_group.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_group.FormattingEnabled = true;
+            this.comboBox_group.Location = new System.Drawing.Point(6, 29);
+            this.comboBox_group.Name = "comboBox_group";
+            this.comboBox_group.Size = new System.Drawing.Size(322, 29);
+            this.comboBox_group.TabIndex = 0;
             // 
             // panel_right
             // 
@@ -306,7 +307,7 @@
         private System.Windows.Forms.Panel panel_left;
         private System.Windows.Forms.GroupBox group_contact_list;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.ComboBox comboBox_groups;
+        private System.Windows.Forms.ComboBox comboBox_group;
         private System.Windows.Forms.Button btn_add_contact;
         private System.Windows.Forms.ListBox listBox_contacts;
         private System.Windows.Forms.Panel panel1;

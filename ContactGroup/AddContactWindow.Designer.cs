@@ -30,7 +30,7 @@
         {
             this.picture_contact = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox_group = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -62,7 +62,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.comboBox_group);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.textBox6);
             this.panel1.Controls.Add(this.textBox5);
@@ -81,15 +81,15 @@
             this.panel1.Size = new System.Drawing.Size(330, 264);
             this.panel1.TabIndex = 2;
             // 
-            // comboBox1
+            // comboBox_group
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(101, 220);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(224, 29);
-            this.comboBox1.TabIndex = 23;
+            this.comboBox_group.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_group.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_group.FormattingEnabled = true;
+            this.comboBox_group.Location = new System.Drawing.Point(101, 220);
+            this.comboBox_group.Name = "comboBox_group";
+            this.comboBox_group.Size = new System.Drawing.Size(224, 29);
+            this.comboBox_group.TabIndex = 23;
             // 
             // label7
             // 
@@ -265,7 +265,7 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox_group;
         private System.Windows.Forms.Button bn_add;
         private System.Windows.Forms.Button btn_choose_img;
     }

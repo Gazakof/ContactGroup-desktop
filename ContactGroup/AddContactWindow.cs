@@ -15,6 +15,18 @@ namespace ContactGroup
         public AddContactWindow()
         {
             InitializeComponent();
+            LoadGroup();
+        }
+
+        private void LoadGroup()
+        {
+            comboBox_group.Items.Clear();
+            comboBox_group.Items.AddRange(Global.contactsGroup.ToArray());
+
+            if (comboBox_group.Items != null)
+            {
+                comboBox_group.SelectedIndex = 0;
+            }
         }
     }
 }
