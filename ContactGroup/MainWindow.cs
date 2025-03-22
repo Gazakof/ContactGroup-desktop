@@ -21,7 +21,8 @@ namespace ContactGroup
         private void btn_add_contact_Click(object sender, EventArgs e)
         {
             AddContactWindow addContactWindow = new AddContactWindow();
-            addContactWindow.ShowDialog();
+            DialogResult dr = addContactWindow.ShowDialog();
+            MessageBox.Show(dr.ToString());
         }
 
         private void LoadGroup()

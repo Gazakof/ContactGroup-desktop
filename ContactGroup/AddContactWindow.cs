@@ -33,6 +33,29 @@ namespace ContactGroup
             string city = textB_city.Text;
             Group group = (Group)comboBox_group.SelectedItem;
             Image picture = picture_contact.Image;
+
+            if (checkInputs(firstName, lastName, email, phone, address, city, group))
+            {
+                Contact contact = new Contact(firstName, lastName, email, phone, address, city, picture);
+
+                group.Contacts.Add(contact);
+
+                DialogResult = DialogResult.OK;
+            } else
+            {
+                MessageBox.Show("Please, fill all the fields correctly!");
+            }
         }
+
+        private bool checkInputs(string firstName, string lastName, string email, string phone, string address, string city, Group group)
+        {
+            return !string.IsNullOrEmpty(firstName)
+                && !string.IsNullOrEmpty(lastName)
+                && !string.IsNullOrEmpty(email)
+                && !string.IsNullOrEmpty(phone)
+                && !string.IsNullOrEmpty(address)
+                && !string.IsNullOrEmpty(city)
+                && group != null;
+        } 
     }
 }
