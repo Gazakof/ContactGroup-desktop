@@ -43,7 +43,7 @@ namespace ContactGroup
                 DialogResult = DialogResult.OK;
             } else
             {
-                MessageBox.Show("Please, fill all the fields correctly!");
+                MessageBox.Show("Please, fill all the fields correctly!", "Contact Group", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
