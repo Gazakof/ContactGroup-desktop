@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace ContactGroup
 {
@@ -27,6 +21,18 @@ namespace ContactGroup
             {
                 comboBox_group.SelectedIndex = 0;
             }
+        }
+
+        private void bn_add_Click(object sender, EventArgs e)
+        {
+            string firstName = textB_last_name.Text;
+            string lastName = textB_first_name.Text;
+            string email = textB_email.Text;
+            string phone = textB_phone.Text;
+            string address = textB_address.Text;
+            string city = textB_city.Text;
+            Group group = (Group)comboBox_group.SelectedItem;
+            Image picture = picture_contact.Image;
         }
     }
 }

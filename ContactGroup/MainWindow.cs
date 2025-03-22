@@ -27,12 +27,8 @@ namespace ContactGroup
         private void LoadGroup()
         {
             comboBox_group.Items.Clear();
+            comboBox_group.Items.Add("Tout");
             comboBox_group.Items.AddRange(Global.contactsGroup.ToArray());
-
-            if (comboBox_group.Items != null)
-            {
-                comboBox_group.SelectedIndex = 0;
-            }
         }
     }
 }

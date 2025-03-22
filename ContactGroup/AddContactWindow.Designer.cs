@@ -32,12 +32,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.comboBox_group = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textB_city = new System.Windows.Forms.TextBox();
+            this.textB_address = new System.Windows.Forms.TextBox();
+            this.textB_last_name = new System.Windows.Forms.TextBox();
+            this.textB_email = new System.Windows.Forms.TextBox();
+            this.textB_phone = new System.Windows.Forms.TextBox();
+            this.textB_first_name = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -64,12 +64,12 @@
             // 
             this.panel1.Controls.Add(this.comboBox_group);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.textBox6);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.textB_city);
+            this.panel1.Controls.Add(this.textB_address);
+            this.panel1.Controls.Add(this.textB_last_name);
+            this.panel1.Controls.Add(this.textB_email);
+            this.panel1.Controls.Add(this.textB_phone);
+            this.panel1.Controls.Add(this.textB_first_name);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label6);
@@ -101,53 +101,53 @@
             this.label7.Text = "Last name :";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox6
+            // textB_city
             // 
-            this.textBox6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(101, 181);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(224, 29);
-            this.textBox6.TabIndex = 21;
+            this.textB_city.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textB_city.Location = new System.Drawing.Point(101, 181);
+            this.textB_city.Name = "textB_city";
+            this.textB_city.Size = new System.Drawing.Size(224, 29);
+            this.textB_city.TabIndex = 21;
             // 
-            // textBox5
+            // textB_address
             // 
-            this.textBox5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(101, 146);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(224, 29);
-            this.textBox5.TabIndex = 20;
+            this.textB_address.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textB_address.Location = new System.Drawing.Point(101, 146);
+            this.textB_address.Name = "textB_address";
+            this.textB_address.Size = new System.Drawing.Size(224, 29);
+            this.textB_address.TabIndex = 20;
             // 
-            // textBox4
+            // textB_last_name
             // 
-            this.textBox4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(101, 46);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(224, 29);
-            this.textBox4.TabIndex = 19;
+            this.textB_last_name.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textB_last_name.Location = new System.Drawing.Point(101, 46);
+            this.textB_last_name.Name = "textB_last_name";
+            this.textB_last_name.Size = new System.Drawing.Size(224, 29);
+            this.textB_last_name.TabIndex = 19;
             // 
-            // textBox3
+            // textB_email
             // 
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(101, 79);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(224, 29);
-            this.textBox3.TabIndex = 18;
+            this.textB_email.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textB_email.Location = new System.Drawing.Point(101, 79);
+            this.textB_email.Name = "textB_email";
+            this.textB_email.Size = new System.Drawing.Size(224, 29);
+            this.textB_email.TabIndex = 18;
             // 
-            // textBox2
+            // textB_phone
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(101, 112);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(224, 29);
-            this.textBox2.TabIndex = 17;
+            this.textB_phone.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textB_phone.Location = new System.Drawing.Point(101, 112);
+            this.textB_phone.Name = "textB_phone";
+            this.textB_phone.Size = new System.Drawing.Size(224, 29);
+            this.textB_phone.TabIndex = 17;
             // 
-            // textBox1
+            // textB_first_name
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(101, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(224, 29);
-            this.textBox1.TabIndex = 16;
+            this.textB_first_name.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textB_first_name.Location = new System.Drawing.Point(101, 12);
+            this.textB_first_name.Name = "textB_first_name";
+            this.textB_first_name.Size = new System.Drawing.Size(224, 29);
+            this.textB_first_name.TabIndex = 16;
             // 
             // label4
             // 
@@ -218,6 +218,7 @@
             this.bn_add.TabIndex = 3;
             this.bn_add.Text = "ADD";
             this.bn_add.UseVisualStyleBackColor = true;
+            this.bn_add.Click += new System.EventHandler(this.bn_add_Click);
             // 
             // btn_choose_img
             // 
@@ -258,13 +259,13 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textB_first_name;
+        private System.Windows.Forms.TextBox textB_last_name;
+        private System.Windows.Forms.TextBox textB_email;
+        private System.Windows.Forms.TextBox textB_phone;
+        private System.Windows.Forms.TextBox textB_address;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textB_city;
         private System.Windows.Forms.ComboBox comboBox_group;
         private System.Windows.Forms.Button bn_add;
         private System.Windows.Forms.Button btn_choose_img;
