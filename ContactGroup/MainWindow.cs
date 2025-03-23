@@ -39,6 +39,14 @@ namespace ContactGroup
                 Group group = (Group)this.comboBox_group.SelectedItem;
                 ShowContactsOf(group);
             }
+
+            if (listBox_contacts.Items.Count > 0)
+            {
+                listBox_contacts.SelectedIndex = 0;
+            } else
+            {
+                ClearInfo();
+            }
         }
 
         private void ShowContactsOf(Group group)
@@ -67,6 +75,38 @@ namespace ContactGroup
         private void comboBox_group_SelectedIndexChanged(object sender, EventArgs e)
         {
             UpdateContacts();
+        }
+
+        private void listBox_contacts_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Contact contact = (Contact)this.listBox_contacts.SelectedItem;
+            if (contact != null)
+            {
+                ShowInfoOf(contact);
+            }
+        }
+
+        private void ShowInfoOf(Contact contact)
+        {
+            ClearInfo();
+            picture_contact.Image = contact.Photo;
+            label_name.Text = contact.ToString();
+            label_email.Text = contact.Email;
+            label_phone.Text = contact.Phone;
+            label_address.Text = contact.Address;
+            label_ville.Text = contact.City;
+            label_groupe.Text = comboBox_group.SelectedItem.ToString();
+        }
+
+        private void ClearInfo()
+        {
+            picture_contact.Image = null;
+            label_name.Text = "";
+            label_email.Text = "";
+            label_phone.Text = "";
+            label_address.Text = "";
+            label_ville.Text = "";
+            label_groupe.Text = "";
         }
     }
 }

@@ -126,6 +126,7 @@
             this.listBox_contacts.Size = new System.Drawing.Size(322, 340);
             this.listBox_contacts.Sorted = true;
             this.listBox_contacts.TabIndex = 1;
+            this.listBox_contacts.SelectedIndexChanged += new System.EventHandler(this.listBox_contacts_SelectedIndexChanged);
             // 
             // comboBox_group
             // 
