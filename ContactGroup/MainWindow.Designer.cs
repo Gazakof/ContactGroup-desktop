@@ -135,6 +135,7 @@
             this.comboBox_group.Name = "comboBox_group";
             this.comboBox_group.Size = new System.Drawing.Size(322, 29);
             this.comboBox_group.TabIndex = 0;
+            this.comboBox_group.SelectedIndexChanged += new System.EventHandler(this.comboBox_group_SelectedIndexChanged);
             // 
             // panel_right
             // 

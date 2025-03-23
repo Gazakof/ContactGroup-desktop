@@ -46,6 +46,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.bn_add = new System.Windows.Forms.Button();
             this.btn_choose_img = new System.Windows.Forms.Button();
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.picture_contact)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -56,7 +57,7 @@
             this.picture_contact.Location = new System.Drawing.Point(7, 9);
             this.picture_contact.Name = "picture_contact";
             this.picture_contact.Size = new System.Drawing.Size(330, 300);
-            this.picture_contact.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picture_contact.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picture_contact.TabIndex = 1;
             this.picture_contact.TabStop = false;
             // 
@@ -229,6 +230,12 @@
             this.btn_choose_img.TabIndex = 4;
             this.btn_choose_img.Text = "Choose image";
             this.btn_choose_img.UseVisualStyleBackColor = true;
+            this.btn_choose_img.Click += new System.EventHandler(this.btn_choose_img_Click);
+            // 
+            // openFileDialog
+            // 
+            this.openFileDialog.Filter = "(Fichier PNG)|*.png|(Fichier JPEG)|*.jpeg";
+            this.openFileDialog.Title = "Select an image..";
             // 
             // AddContactWindow
             // 
@@ -269,5 +276,6 @@
         private System.Windows.Forms.ComboBox comboBox_group;
         private System.Windows.Forms.Button bn_add;
         private System.Windows.Forms.Button btn_choose_img;
+        private System.Windows.Forms.OpenFileDialog openFileDialog;
     }
 }

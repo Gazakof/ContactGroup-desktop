@@ -56,6 +56,15 @@ namespace ContactGroup
                 && !string.IsNullOrEmpty(address)
                 && !string.IsNullOrEmpty(city)
                 && group != null;
-        } 
+        }
+
+        private void btn_choose_img_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = openFileDialog.ShowDialog();
+            if (dr == DialogResult.OK)
+            {
+                picture_contact.ImageLocation = openFileDialog.FileName;
+            }
+        }
     }
 }
