@@ -91,24 +91,58 @@ namespace ContactGroup
         private void ShowInfoOf(Contact contact)
         {
             ClearInfo();
-            picture_contact.Image = contact.Photo;
+
+            Image imageToShow;
+            if (contact.Photo != null)
+            {
+                imageToShow = contact.Photo;
+            } else
+            {
+                imageToShow = Properties.Resources.add_img;
+            }
+
+            picture_contact.Image = imageToShow;
             label_name.Text = contact.ToString();
             label_email.Text = contact.Email;
             label_phone.Text = contact.Phone;
             label_address.Text = contact.Address;
             label_ville.Text = contact.City;
-            label_groupe.Text = comboBox_group.SelectedItem.ToString();
+            label_groupe.Text = GetGroupOf(contact).Name;
         }
 
         private void ClearInfo()
         {
-            picture_contact.Image = null;
+            picture_contact.Image = Properties.Resources.add_img;
             label_name.Text = "";
             label_email.Text = "";
             label_phone.Text = "";
             label_address.Text = "";
             label_ville.Text = "";
             label_groupe.Text = "";
+        }
+
+        private Group GetGroupOf(Contact contact)
+        {
+            return Global.contactsGroup.Find(group => group.Contacts.Contains(contact));
+        }
+
+        private void btn_delete_Click(object sender, EventArgs e)
+        {
+            Contact contact = (Contact)listBox_contacts.SelectedItem;
+            Group group = GetGroupOf(contact);
+
+            if (contact != null && group != null)
+            {
+                DialogResult dr = MessageBox.Show("Are you sure to delete this contact?",
+                    "Contact Group", MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Information);
+                if (dr == DialogResult.Yes)
+                {
+                    group.Contacts.Remove(contact);
+                    UpdateContacts();
+                    SaveManager.Save(Global.contactsGroup);
+                }
+            }
         }
     }
 }

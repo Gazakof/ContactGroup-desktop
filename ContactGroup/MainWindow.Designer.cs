@@ -164,11 +164,12 @@
             this.btn_delete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_delete.FlatAppearance.BorderSize = 0;
             this.btn_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_delete.Location = new System.Drawing.Point(310, 12);
+            this.btn_delete.Location = new System.Drawing.Point(313, 12);
             this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(30, 30);
+            this.btn_delete.Size = new System.Drawing.Size(25, 25);
             this.btn_delete.TabIndex = 12;
             this.btn_delete.UseVisualStyleBackColor = false;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // label_address
             // 

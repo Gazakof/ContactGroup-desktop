@@ -11,6 +11,7 @@ namespace ContactGroup
 
         public string Name { get => name; private set => name = value; }
         public List<Contact> Contacts { get => contactsList; private set => contactsList = value; }
+
         public Group() 
         {
             Name = "Undefined";
