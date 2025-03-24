@@ -4,6 +4,7 @@ using System.Drawing;
 
 namespace ContactGroup
 {
+    [Serializable]
     public class Contact
     {
         //Propriétés

@@ -278,7 +278,7 @@
             this.picture_contact.Location = new System.Drawing.Point(13, 8);
             this.picture_contact.Name = "picture_contact";
             this.picture_contact.Size = new System.Drawing.Size(330, 300);
-            this.picture_contact.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picture_contact.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picture_contact.TabIndex = 0;
             this.picture_contact.TabStop = false;
             // 

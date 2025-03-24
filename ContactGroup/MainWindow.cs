@@ -15,6 +15,7 @@ namespace ContactGroup
         public MainWindow()
         {
             InitializeComponent();
+            Global.contactsGroup = SaveManager.Open();
             LoadGroup();
         }
 
@@ -25,6 +26,7 @@ namespace ContactGroup
             if (dr == DialogResult.OK)
             {
                 UpdateContacts();
+                SaveManager.Save(Global.contactsGroup);
             }
         }
 
