@@ -1,12 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace ContactGroup
 {
@@ -92,7 +88,7 @@ namespace ContactGroup
         {
             ClearInfo();
 
-            Image imageToShow;
+            System.Drawing.Image imageToShow;
             if (contact.Photo != null)
             {
                 imageToShow = contact.Photo;
@@ -141,6 +137,30 @@ namespace ContactGroup
                     group.Contacts.Remove(contact);
                     UpdateContacts();
                     SaveManager.Save(Global.contactsGroup);
+                }
+            }
+        }
+
+        private void txt_search_TextChanged(object sender, EventArgs e)
+        {
+            string search = txt_search.Text.ToLower();
+
+            if (search.Length <= 0)
+            {
+                UpdateContacts();
+                return;
+            }
+
+            listBox_contacts.Items.Clear();
+            foreach (Group group in Global.contactsGroup)
+            {
+                foreach (Contact contact in group.Contacts)
+                {
+                    string cName = contact.ToString().ToLower();
+                    if (cName.Contains(search))
+                    {
+                        listBox_contacts.Items.Add(contact);
+                    }
                 }
             }
         }
